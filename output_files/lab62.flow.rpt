@@ -1,0 +1,130 @@
+Flow report for lab62
+Mon Mar 29 14:17:36 2021
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Mon Mar 29 14:17:15 2021       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; lab62                                       ;
+; Top-level Entity Name              ; lab62                                       ;
+; Family                             ; MAX 10                                      ;
+; Device                             ; 10M50DCF484C7G                              ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 4,021 / 49,760 ( 8 % )                      ;
+;     Total combinational functions  ; 3,418 / 49,760 ( 7 % )                      ;
+;     Dedicated logic registers      ; 2,457 / 49,760 ( 5 % )                      ;
+; Total registers                    ; 2526                                        ;
+; Total pins                         ; 141 / 360 ( 39 % )                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 11,392 / 1,677,312 ( < 1 % )                ;
+; Embedded Multiplier 9-bit elements ; 4 / 288 ( 1 % )                             ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                              ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 03/29/2021 14:10:12 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; lab62               ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                              ;
++-------------------------------------+----------------------------------------+---------------+-------------------+------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name       ; Section Id ;
++-------------------------------------+----------------------------------------+---------------+-------------------+------------+
+; COMPILER_SIGNATURE_ID               ; 1095406216780.161704501118652          ; --            ; --                ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --                ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --                ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; DE10_LITE_Default ; Top        ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --                ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; DE10_LITE_Default ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --                ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; DE10_LITE_Default ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --                ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --                ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --                ; --         ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --                ; --         ;
++-------------------------------------+----------------------------------------+---------------+-------------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:04:34     ; 1.0                     ; 4978 MB             ; 00:04:49                           ;
+; Fitter               ; 00:02:02     ; 1.2                     ; 5639 MB             ; 00:02:47                           ;
+; Assembler            ; 00:00:12     ; 1.0                     ; 4709 MB             ; 00:00:11                           ;
+; Timing Analyzer      ; 00:00:18     ; 1.6                     ; 4872 MB             ; 00:00:25                           ;
+; Total                ; 00:07:06     ; --                      ; --                  ; 00:08:12                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++----------------------+----------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname     ; OS Name    ; OS Version ; Processor type ;
++----------------------+----------------------+------------+------------+----------------+
+; Analysis & Synthesis ; Daniel-Marks-Surface ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; Daniel-Marks-Surface ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; Daniel-Marks-Surface ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; Daniel-Marks-Surface ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+----------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off lab62 -c lab62
+quartus_fit --read_settings_files=off --write_settings_files=off lab62 -c lab62
+quartus_asm --read_settings_files=off --write_settings_files=off lab62 -c lab62
+quartus_sta lab62 -c lab62
+
+
+

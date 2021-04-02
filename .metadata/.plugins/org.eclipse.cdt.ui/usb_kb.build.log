@@ -1,0 +1,9 @@
+13:47:10 **** Incremental Build of configuration Nios II for project usb_kb ****
+wsl make all 
+Info: Building /mnt/c/Users/danie/OneDrive/Desktop/Lab6.2/software/usb_kb_bsp/
+make --no-print-directory -C /mnt/c/Users/danie/OneDrive/Desktop/Lab6.2/software/usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+
+13:47:12 Build Finished (took 2s.495ms)
+
